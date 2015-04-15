@@ -1,0 +1,1 @@
+# SimpleSoftwareLicensing.Samples
