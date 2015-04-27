@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 using Habanero.Licensing.Validation;
 
-namespace SampleApp
+namespace WindowsApplication
 {
     internal static class Common
     {
