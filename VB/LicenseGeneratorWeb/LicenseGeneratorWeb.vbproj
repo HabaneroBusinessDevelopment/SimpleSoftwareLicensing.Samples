@@ -57,6 +57,14 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Habanero.Licensing.Shared, Version=2.0.0.0, Culture=neutral, PublicKeyToken=07f8d7292c654eb8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Habanero.Licensing.Validation.2.2.0\lib\Habanero.Licensing.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Habanero.Licensing.Validation, Version=2.0.0.0, Culture=neutral, PublicKeyToken=07f8d7292c654eb8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Habanero.Licensing.Validation.2.2.0\lib\Habanero.Licensing.Validation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -161,12 +169,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Licensing.Shared\Habanero.Licensing.Shared.csproj">
-      <Project>{6063e12d-b9ee-42a4-9399-2f021bf772b7}</Project>
-      <Name>Habanero.Licensing.Shared</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Licensing.Generator\Habanero.Licensing.Generator.csproj">
       <Project>{849ad9d7-a333-4543-a598-c9966688f1ab}</Project>
       <Name>Habanero.Licensing.Generator</Name>

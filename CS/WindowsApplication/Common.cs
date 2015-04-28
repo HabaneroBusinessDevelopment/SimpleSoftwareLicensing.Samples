@@ -9,8 +9,9 @@ namespace WindowsApplication
     internal static class Common
     {
         private static string LicenseFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SampleApplication");
-        private static string LicenseFileLocation = Path.Combine(LicenseFolder, LicenseFileName);
         private static string LicenseFileName = "SampleLicenseFile.lic";
+        private static string LicenseFileLocation = Path.Combine(LicenseFolder, LicenseFileName);
+        
 
         //create code for applicationsecret - taken from the License Manager application
         static byte[] applicationSecret = Convert.FromBase64String("JdZlrqJqbEemYDIaUXTKVQ==");

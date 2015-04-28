@@ -4,8 +4,8 @@ Imports System.Reflection
 
 Friend NotInheritable Class Common
     Shared LicenseFolder As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SampleApplication")
-    Shared LicenseFileLocation As String = Path.Combine(LicenseFolder, LicenseFile)
     Shared LicenseFile As String = "SampleLicenseFile.lic"
+    Shared LicenseFileLocation As String = Path.Combine(LicenseFolder, LicenseFile)
 
     Public Shared ReadOnly Property LicenseFileLocationProperty As String
         Get

@@ -43,6 +43,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Habanero.Licensing.Shared, Version=2.0.0.0, Culture=neutral, PublicKeyToken=07f8d7292c654eb8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Habanero.Licensing.Validation.2.2.0\lib\Habanero.Licensing.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Habanero.Licensing.Validation, Version=2.0.0.0, Culture=neutral, PublicKeyToken=07f8d7292c654eb8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Habanero.Licensing.Validation.2.2.0\lib\Habanero.Licensing.Validation.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -81,14 +89,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Licensing.Shared\Habanero.Licensing.Shared.csproj">
-      <Project>{6063E12D-B9EE-42A4-9399-2F021BF772B7}</Project>
-      <Name>Habanero.Licensing.Shared</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Licensing.Generator\Habanero.Licensing.Generator.csproj">
       <Project>{849AD9D7-A333-4543-A598-C9966688F1AB}</Project>
       <Name>Habanero.Licensing.Generator</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

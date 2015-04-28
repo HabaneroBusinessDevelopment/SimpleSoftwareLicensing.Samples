@@ -49,6 +49,14 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Habanero.Licensing.Shared, Version=2.0.0.0, Culture=neutral, PublicKeyToken=07f8d7292c654eb8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Habanero.Licensing.Validation.2.2.0\lib\Habanero.Licensing.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Habanero.Licensing.Validation, Version=2.0.0.0, Culture=neutral, PublicKeyToken=07f8d7292c654eb8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Habanero.Licensing.Validation.2.2.0\lib\Habanero.Licensing.Validation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -129,16 +137,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Licensing.Shared\Habanero.Licensing.Shared.csproj">
-      <Project>{6063E12D-B9EE-42A4-9399-2F021BF772B7}</Project>
-      <Name>Habanero.Licensing.Shared</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Licensing.Validation\Habanero.Licensing.Validation.csproj">
-      <Project>{C6253A0C-FED7-4CB9-9DF0-74CE677ACB65}</Project>
-      <Name>Habanero.Licensing.Validation</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
