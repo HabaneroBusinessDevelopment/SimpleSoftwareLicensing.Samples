@@ -11,7 +11,7 @@ namespace WindowsApplication
             InitializeComponent();
 
             //load current license information
-            LicenseValidationResult valResult = Common.FileValidator.CheckLicense();
+            LicenseValidationResult valResult = Common.IsolatedStorageValidator.CheckLicense();
 
             UpdateUI(valResult);
         }
@@ -20,7 +20,7 @@ namespace WindowsApplication
 
         private void btnActivateTrial_Click(object sender, EventArgs e)
         {
-            LicenseValidationResult valResult = Common.FileValidator.ActivateTrial(10);
+            LicenseValidationResult valResult = Common.IsolatedStorageValidator.ActivateTrial(10);
             Close();
         }
 
@@ -43,21 +43,21 @@ namespace WindowsApplication
         private void btnSave_Click(object sender, EventArgs e)
         {
             //check the new license
-            LicenseValidationResult valResult = Common.FileValidator.CheckLicense(txtLicense.Text);
+            LicenseValidationResult valResult = Common.IsolatedStorageValidator.CheckLicense(txtLicense.Text);
             if (valResult.State == LicenseState.Invalid)
             {
                 MessageBox.Show("The license you entered is not valid and will not be saved!", "Invalid License", MessageBoxButtons.OK);
             }
             else
             {
-                Common.FileValidator.SaveLicense(txtLicense.Text);
+                Common.IsolatedStorageValidator.SaveLicense(txtLicense.Text);
                 Close();
             }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            Common.FileValidator.SaveLicense("");
+            Common.IsolatedStorageValidator.SaveLicense("");
             Close();
         }
        

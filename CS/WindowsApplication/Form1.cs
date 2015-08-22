@@ -35,7 +35,7 @@ namespace WindowsApplication
 
         private void UpdateUI()
         {
-            LicenseValidator localValidator = Common.FileValidator;
+            LicenseValidator localValidator = Common.IsolatedStorageValidator;
             LicenseValidationResult valResult = localValidator.CheckLicense();
             string licenseStateString;
             switch (valResult.State)
@@ -82,14 +82,14 @@ namespace WindowsApplication
 
         private void btnStandard_Click(object sender, EventArgs e)
         {
-            LicenseValidationResult valResult = Common.FileValidator.CheckLicense();
+            LicenseValidationResult valResult = Common.IsolatedStorageValidator.CheckLicense();
             if (valResult.State == LicenseState.Trial)
             {
                 MessageBox.Show("Trial of standard feature!");
             }
             else
             {
-                if (!Common.FileValidator.IsEdition(Common.StandardOrHigher))
+                if (!Common.IsolatedStorageValidator.IsEdition(Common.StandardOrHigher))
                 {
                     MessageBox.Show("You do not have a standard edition.");
                     return;
@@ -100,14 +100,14 @@ namespace WindowsApplication
 
         private void btnPro_Click(object sender, EventArgs e)
         {
-             LicenseValidationResult valResult = Common.FileValidator.CheckLicense();
+             LicenseValidationResult valResult = Common.IsolatedStorageValidator.CheckLicense();
              if (valResult.State == LicenseState.Trial)
              {
                  MessageBox.Show("Trial of pro feature!");
              }
              else
              {
-                 if (!Common.FileValidator.IsEdition(Common.ProOrHigher))
+                 if (!Common.IsolatedStorageValidator.IsEdition(Common.ProOrHigher))
                  {
                      MessageBox.Show("You do not have a pro edition.");
                      return;
@@ -118,7 +118,7 @@ namespace WindowsApplication
 
         private void btnEnterprise_Click(object sender, EventArgs e)
         {
-            if (!Common.FileValidator.IsEdition(Common.EnterpriseOrHigher))
+            if (!Common.IsolatedStorageValidator.IsEdition(Common.EnterpriseOrHigher))
             {
                 MessageBox.Show("You do not have an enterprise edition.");
                 return;
