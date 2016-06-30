@@ -24,6 +24,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,13 +44,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Habanero.Licensing.Generator, Version=2.0.0.0, Culture=neutral, PublicKeyToken=07f8d7292c654eb8, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Habanero.Licensing.Generator.2.4.3\lib\net35-Client\Habanero.Licensing.Generator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Habanero.Licensing.Shared, Version=2.0.0.0, Culture=neutral, PublicKeyToken=07f8d7292c654eb8, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Habanero.Licensing.Validation.2.2.0\lib\Habanero.Licensing.Shared.dll</HintPath>
+      <HintPath>..\..\..\packages\Habanero.Licensing.Validation.2.4.3\lib\net35-Client\Habanero.Licensing.Shared.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Habanero.Licensing.Validation, Version=2.0.0.0, Culture=neutral, PublicKeyToken=07f8d7292c654eb8, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Habanero.Licensing.Validation.2.2.0\lib\Habanero.Licensing.Validation.dll</HintPath>
+      <HintPath>..\..\..\packages\Habanero.Licensing.Validation.2.4.3\lib\net35-Client\Habanero.Licensing.Validation.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
@@ -70,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CreateLicense.aspx" />
+    <Content Include="Readme.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -87,12 +93,6 @@
       <DependentUpon>CreateLicense.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Licensing.Generator\Habanero.Licensing.Generator.csproj">
-      <Project>{849AD9D7-A333-4543-A598-C9966688F1AB}</Project>
-      <Name>Habanero.Licensing.Generator</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

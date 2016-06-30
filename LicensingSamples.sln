@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicenseGeneratorWeb", "CS\LicenseGeneratorWeb\LicenseGeneratorWeb.csproj", "{A5D537C2-38B3-4E91-9D32-FFC67692EE9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsApplication", "CS\WindowsApplication\WindowsApplication.csproj", "{4A5C8A91-B7D0-4EF9-8D0E-7A4A17D3782F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CS", "CS", "{9694C70F-2263-4E57-9828-78A3ADD03C8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VB", "VB", "{A9826AFE-F57B-447A-BCBB-10D3EB77CA77}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LicenseGeneratorWeb", "VB\LicenseGeneratorWeb\LicenseGeneratorWeb.vbproj", "{02466744-6E41-4086-9EA9-ECADAF1413DD}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WindowsApplication", "VB\WindowsApplication\WindowsApplication.vbproj", "{DCB72FCD-D686-4CD4-9C0D-B75343F336F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5D537C2-38B3-4E91-9D32-FFC67692EE9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D537C2-38B3-4E91-9D32-FFC67692EE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5D537C2-38B3-4E91-9D32-FFC67692EE9B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A5D537C2-38B3-4E91-9D32-FFC67692EE9B}.Debug|x86.Build.0 = Debug|Any CPU
+		{A5D537C2-38B3-4E91-9D32-FFC67692EE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5D537C2-38B3-4E91-9D32-FFC67692EE9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5D537C2-38B3-4E91-9D32-FFC67692EE9B}.Release|x86.ActiveCfg = Release|Any CPU
+		{A5D537C2-38B3-4E91-9D32-FFC67692EE9B}.Release|x86.Build.0 = Release|Any CPU
+		{4A5C8A91-B7D0-4EF9-8D0E-7A4A17D3782F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4A5C8A91-B7D0-4EF9-8D0E-7A4A17D3782F}.Debug|Any CPU.Build.0 = Debug|x86
+		{4A5C8A91-B7D0-4EF9-8D0E-7A4A17D3782F}.Debug|x86.ActiveCfg = Debug|x86
+		{4A5C8A91-B7D0-4EF9-8D0E-7A4A17D3782F}.Debug|x86.Build.0 = Debug|x86
+		{4A5C8A91-B7D0-4EF9-8D0E-7A4A17D3782F}.Release|Any CPU.ActiveCfg = Release|x86
+		{4A5C8A91-B7D0-4EF9-8D0E-7A4A17D3782F}.Release|x86.ActiveCfg = Release|x86
+		{4A5C8A91-B7D0-4EF9-8D0E-7A4A17D3782F}.Release|x86.Build.0 = Release|x86
+		{02466744-6E41-4086-9EA9-ECADAF1413DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02466744-6E41-4086-9EA9-ECADAF1413DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02466744-6E41-4086-9EA9-ECADAF1413DD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{02466744-6E41-4086-9EA9-ECADAF1413DD}.Debug|x86.Build.0 = Debug|Any CPU
+		{02466744-6E41-4086-9EA9-ECADAF1413DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02466744-6E41-4086-9EA9-ECADAF1413DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02466744-6E41-4086-9EA9-ECADAF1413DD}.Release|x86.ActiveCfg = Release|Any CPU
+		{02466744-6E41-4086-9EA9-ECADAF1413DD}.Release|x86.Build.0 = Release|Any CPU
+		{DCB72FCD-D686-4CD4-9C0D-B75343F336F7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DCB72FCD-D686-4CD4-9C0D-B75343F336F7}.Debug|Any CPU.Build.0 = Debug|x86
+		{DCB72FCD-D686-4CD4-9C0D-B75343F336F7}.Debug|x86.ActiveCfg = Debug|x86
+		{DCB72FCD-D686-4CD4-9C0D-B75343F336F7}.Debug|x86.Build.0 = Debug|x86
+		{DCB72FCD-D686-4CD4-9C0D-B75343F336F7}.Release|Any CPU.ActiveCfg = Release|x86
+		{DCB72FCD-D686-4CD4-9C0D-B75343F336F7}.Release|x86.ActiveCfg = Release|x86
+		{DCB72FCD-D686-4CD4-9C0D-B75343F336F7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A5D537C2-38B3-4E91-9D32-FFC67692EE9B} = {9694C70F-2263-4E57-9828-78A3ADD03C8D}
+		{4A5C8A91-B7D0-4EF9-8D0E-7A4A17D3782F} = {9694C70F-2263-4E57-9828-78A3ADD03C8D}
+		{02466744-6E41-4086-9EA9-ECADAF1413DD} = {A9826AFE-F57B-447A-BCBB-10D3EB77CA77}
+		{DCB72FCD-D686-4CD4-9C0D-B75343F336F7} = {A9826AFE-F57B-447A-BCBB-10D3EB77CA77}
+	EndGlobalSection
+EndGlobal

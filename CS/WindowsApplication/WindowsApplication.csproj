@@ -41,18 +41,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Habanero.Licensing.Shared, Version=2.0.0.0, Culture=neutral, PublicKeyToken=07f8d7292c654eb8, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Habanero.Licensing.Validation.2.2.0\lib\Habanero.Licensing.Shared.dll</HintPath>
+      <HintPath>..\..\packages\Habanero.Licensing.Validation.2.4.3\lib\net35-Client\Habanero.Licensing.Shared.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Habanero.Licensing.Validation, Version=2.0.0.0, Culture=neutral, PublicKeyToken=07f8d7292c654eb8, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Habanero.Licensing.Validation.2.2.0\lib\Habanero.Licensing.Validation.dll</HintPath>
+      <HintPath>..\..\packages\Habanero.Licensing.Validation.2.4.3\lib\net35-Client\Habanero.Licensing.Validation.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -103,6 +102,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="samplekey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
